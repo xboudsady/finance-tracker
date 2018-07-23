@@ -11,6 +11,9 @@ gem 'rails', '~> 5.2.0'
 # For authentication
 gem 'devise'
 
+# Font Awesome icons
+gem 'font-awesome-rails', '~> 4.7', '>= 4.7.0.4'
+
 # jQuery
 gem 'jquery-rails'
 
@@ -20,6 +23,7 @@ gem 'devise-bootstrap-views'
 
 # Stock Quote API
 gem 'stock_quote', '~> 2.0'
+
 
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
