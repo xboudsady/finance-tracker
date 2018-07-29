@@ -4,10 +4,10 @@ Rails.application.routes.draw do
 
   root 'welcome#index'
 
-  get 'my_portfolio', to: "users#my_portfolio"
+  get 'my_portfolio', to: "users#my_portfolio"        # Users stock portfolio page
 
   get 'search_stocks', to: "stocks#search"
 
-  resources :user_stocks, only: [:create]
+  resources :user_stocks, only: [:create, :destroy]   # Routes for Create, and destroy stocks records
 
 end

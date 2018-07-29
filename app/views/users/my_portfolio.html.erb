@@ -15,6 +15,11 @@
         </div>
     <% end %>
 </div>
+
+<%# Render results if stock symbol is found %>
 <div id="results">
     <%= render 'users/result' %>
 </div>
+
+<%# Render partial view from stocks folder %>
+<%= render 'stocks/list' %>
