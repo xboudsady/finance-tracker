@@ -22,3 +22,10 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+Stock Restrictions
+
+- Users can track max 10 stocks
+
+- Same stock cannot be tracked twice
