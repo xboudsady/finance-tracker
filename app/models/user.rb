@@ -7,6 +7,11 @@ class User < ApplicationRecord
   has_many :user_stocks                                           # Many to Many relationship of stocks and user
   has_many :stocks, through: :user_stocks
 
+  def full_name                                                             # Returns full name as a string
+    return "#{first_name} #{last_name}".strip if (first_name || last_name)  # Only if first or last name exist in table
+    "Anonymous"
+  end
+
   
   def stock_already_added?(ticker_symbol)                         # Check to see if user already has added the stock symbols
     stock = Stock.find_by_ticker(ticker_symbol)
